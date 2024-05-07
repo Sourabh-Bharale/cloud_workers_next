@@ -7,14 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "npx tsx ./src/lib/seed.ts"
+    "seed": "npx tsx ./src/lib/seed.ts",
+    "deploy": "npx wrangler deploy --minify --name cf_next src/app/api/[[...route]]/route.ts"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@upstash/redis": "^1.30.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.0.0",
     "hono": "^4.3.2",
+    "lucide-react": "^0.378.0",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
